@@ -1,6 +1,8 @@
-package yaroslav;
+package yaroslav.Entity;
 
-public class Statistics {
+import yaroslav.EntityInterface.StatisticsInterface;
+
+public class Statistics implements StatisticsInterface {
 
     //расчет текущей серии выполнения привычки
     public int calculateStreak(Habit habit) {

@@ -1,4 +1,7 @@
-package yaroslav;
+package yaroslav.Management;
+
+import yaroslav.Entity.Habit;
+import yaroslav.Entity.User;
 
 import java.time.LocalDate;
 import java.util.HashMap;
@@ -9,8 +12,8 @@ public class HabitManager {
     Map<String, User> users = new HashMap<>();
 
     // регистрация
-    void createUser(String email, String password, String name) {
-
+    void createUser(User user, String password) {
+        users.put(user.getUsername(), user);
     }
 
     //авторизация
